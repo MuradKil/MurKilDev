@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --secondary: 0 0% 8%;
+}
+
+@theme {
+  --font-display: "Oswald", "sans-serif";
+  --font-roboto: "Roboto", sans-serif; 
+}
+
+body {
+  background-color: rgb(16, 16, 16);
+}
+
+@layer components {
+  h1, h2, h3, h4, p, a, li, span, svg, button, input, label, div {
+    color: var(--color-white);
+  }
+}
+
+.card-g {
+  border-width: 1px;
+  --tw-border-opacity: 0.4;
+  border-color: rgb(100 100 100 / var(--tw-border-opacity, 1));
+  background-color: hsl(var(--secondary) / 0.8);
+  --tw-backdrop-blur: blur(4px);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.hover\:button-g:hover {
+  box-shadow: 0px 0px 30px 1px rgb(180, 0, 221);
+}
+
+.text-gradient {
+  background-image: linear-gradient(to right, #a42aeb, #754fc7, rgb(165, 35, 205));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
