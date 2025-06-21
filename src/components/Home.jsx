@@ -163,7 +163,7 @@ const Home = () => {
         <Revievs />
         <motion.section className="flex justify-center flex-col mb-22">
           <motion.div className="text-center mb-16" initial={{ opacity: 0 }} whileInView={{opacity: 1, transition: { duration: 0.8, delay: 0.2 } }} viewport={{ once: true }}>
-            <h2 className="font-bold text-3xl md:text-4xl mb-3">Готовы обсудить проект?</h2>
+            <h2 className="font-bold text-3xl md:text-4xl mb-3 px-[1rem]">Готовы обсудить проект?</h2>
             <p className="font-normal text-[18px] md:text-[20px] mb-12">Напишите мне в телеграм</p>
             <a className="p-4 px-7 bg-purple-600 rounded-full font-semibold text-[17px] hover:button-g transition-shadow duration-300" href="http://t.me/murkildev" target="_blank" rel="noopener noreferrer">Написать мне</a>
           </motion.div>
