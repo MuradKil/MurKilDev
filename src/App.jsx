@@ -3,11 +3,28 @@ import { useEffect } from "react";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import { AnimatePresence, motion } from "framer-motion";
-import Works from "./components/Works";
 import Footer from "./components/Footer";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import ScrollSmoother from "gsap/ScrollSmoother";
+
 
 function AnimatedRoutes() {
   const location = useLocation();
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+    // Prevent multiple initializations
+    if (!window._scrollSmoother) {
+      window._scrollSmoother = ScrollSmoother.create({
+        smooth: 1,
+        effects: true,
+        wrapper: "#smooth-wrapper",
+        content: "#smooth-content",
+      });
+    }
+  }, []);
 
   const pageVariants = {
     initial: { opacity: 0 },
@@ -21,19 +38,12 @@ function AnimatedRoutes() {
         <Route
           path="/"
           element={
-            <motion.div {...pageVariants}>
-              <Home />
-              <Footer />
-            </motion.div>
-          }
-        />
-        <Route
-          path="/works"
-          element={
-            <motion.div {...pageVariants}>
-              <Works />
-              <Footer />
-            </motion.div>
+            <div id="smooth-wrapper">
+              <motion.div {...pageVariants} id='smooth-content'>
+                <Home />
+                <Footer />
+              </motion.div>
+            </div>
           }
         />
       </Routes>

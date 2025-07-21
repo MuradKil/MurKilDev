@@ -13,8 +13,8 @@ const Works = () => {
             <h2 className="font-bold text-3xl md:text-4xl">Мои работы</h2>
           </motion.div>
           <div className="flex justify-around flex-col items-center px-[1rem] lg:px-[2rem]">
-            <a href="https://damof-hosting.xyz" target="_blank" rel="noreferrer" className="mb-20">
-              <motion.div className="flex flex-col items-center card-g rounded-3xl max-w-[800px]" initial={{ opacity: 0, y: 30}} whileHover={{scale: 1.03, border: "1px solid #535353", transition: { duration: 0.5 }}} whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5, delay: 0, ease: "easeInOut" } }} viewport={{ once: true }}>
+            <a href="https://hosting-d.netlify.app" target="_blank" rel="noreferrer" className="mb-20">
+              <motion.div className="flex flex-col items-center card-g rounded-3xl max-w-[800px]" initial={{ opacity: 0, y: 30}} whileHover={{scale: 1.02, border: "1px solid #9800eb", transition: { duration: 0.3 }}} whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5, delay: 0, ease: "easeInOut" } }} viewport={{ once: true }}>
                 <img src="/damof.png" alt="" className="rounded-3xl" />
                 <div className="w-[100%]">
                   <h2 className="font-semibold text-2xl md:text-3xl m-3 ml-6">Damof-Hosting</h2>
@@ -22,8 +22,8 @@ const Works = () => {
                 </div>
               </motion.div>
             </a>
-            <a href="https://murkildev.netlify.app" target="_blank" rel="noreferrer" className="mb-20">
-              <motion.div className="flex flex-col items-center card-g rounded-3xl max-w-[800px]" initial={{ opacity: 0, y: 30}} whileHover={{scale: 1.03, border: "1px solid #535353", transition: { duration: 0.5 }}} whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5, delay: 0, ease: "easeInOut" } }} viewport={{ once: true }}>
+            <a href="https://murkildev.vercel.app" target="_blank" rel="noreferrer" className="mb-20">
+              <motion.div className="flex flex-col items-center card-g rounded-3xl max-w-[800px]" initial={{ opacity: 0, y: 30}} whileHover={{scale: 1.02, border: "1px solid #9800eb", transition: { duration: 0.3 }}} whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5, delay: 0, ease: "easeInOut" } }} viewport={{ once: true }}>
                 <img src="/portfolio.png" alt="" className="rounded-3xl" />
                 <div className="w-[100%]">
                   <h2 className="font-semibold text-2xl md:text-3xl m-3 ml-6">Портфолио</h2>
@@ -32,7 +32,7 @@ const Works = () => {
               </motion.div>
             </a>
             <a href="https://murkildev.netlify.app" target="_blank" rel="noreferrer" className="mb-20">
-              <motion.div className="flex flex-col items-center card-g rounded-3xl max-w-[800px]" initial={{ opacity: 0, y: 30}} whileHover={{scale: 1.03, border: "1px solid #535353", transition: { duration: 0.5 }}} whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5, delay: 0, ease: "easeInOut" } }} viewport={{ once: true }}>
+              <motion.div className="flex flex-col items-center card-g rounded-3xl max-w-[800px]" initial={{ opacity: 0, y: 30}} whileHover={{scale: 1.02, border: "1px solid #9800eb", transition: { duration: 0.3 }}} whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5, delay: 0, ease: "easeInOut" } }} viewport={{ once: true }}>
                 <img src="/cola149.png" alt="" className="rounded-3xl" />
                 <div className="w-[100%]">
                   <h2 className="font-semibold text-2xl md:text-3xl m-3 ml-6">Cola149</h2>

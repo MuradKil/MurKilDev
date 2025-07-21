@@ -28,8 +28,8 @@ export default function Revievs() {
   const data = testimonials[selected];
 
   return (
-    <motion.section className="flex justify-center px-[1rem] lg:px-[4rem] mb-8 lg:mb-50 relative z-2" initial={{ opacity: 0 }} whileInView={{opacity: 1, transition: { duration: 0.8, delay: 0.2 } }} viewport={{ once: true }}>
-      <div className="py-30 flex justify-center items-center flex-col max-w-[1440px]">
+    <motion.section className="flex justify-center px-[1rem] lg:px-[4rem] relative z-2" initial={{ opacity: 0 }} whileInView={{opacity: 1, transition: { duration: 0.8, delay: 0.2 } }} viewport={{ once: true }}>
+      <div className="py-10 flex justify-center items-center flex-col max-w-[1440px]">
         <div className="text-center mb-8">
             <h2 className="font-bold text-3xl md:text-4xl mb-3">Отзывы моих клиентов</h2>
         </div>

@@ -6,8 +6,9 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import SplitText from "gsap/SplitText";
 import Revievs from "./Revievs";
+import Works from "./Works";
 
-gsap.registerPlugin(ScrollTrigger, SplitText);
+
 
 
 const Home = () => {
@@ -42,7 +43,8 @@ const Home = () => {
             end: "top 50%",
             scrub: true,
             toggleActions: "play none none reverse",
-            invalidateOnRefresh: true
+            invalidateOnRefresh: true,
+            scroller: "#smooth-wrapper", // <--- add this line!
           },
           color: targetColor,
           duration: 1,
@@ -89,13 +91,13 @@ const Home = () => {
               <div className="border border-neutral-500 p-1 px-3 lg:px-7 rounded-full">React JS</div>
               <div className="border border-neutral-500 p-1 px-3 lg:px-7 rounded-full">Tailwind CSS</div>
             </div>
-            <h1 className="font-semibold text-center text-3xl md:text-4xl lg:text-5xl mb-6">Привет! Я — MurKilDev,<br />Frontend-разработчик.</h1>
+            <h1 className="font-semibold text-center text-3xl md:text-4xl lg:text-5xl mb-6">Привет! Я — MurKinDev,<br />Frontend-разработчик.</h1>
             <p className="text-[17px] lg:text-[20px] text-center mb-7">Создаю сайты, которые нравятся и клиентам, и пользователям.</p>
             <Link to='/works' className="p-4 px-7 bg-purple-600 rounded-full font-semibold text-[17px] hover:button-g transition-shadow duration-300">Посмотреть работы</Link>
           </div>
         </motion.section>
-        <motion.section className="min-h-[700px]">
-          <motion.div className="text-center mt-24 mb-26" initial={{ opacity: 0 }} whileInView={{opacity: 1, transition: { duration: 0.8, delay: 0.2 } }} viewport={{ once: true }}>
+        <motion.section className="]">
+          <motion.div className="text-center mt-24 mb-8 md:mb-26" initial={{ opacity: 0 }} whileInView={{opacity: 1, transition: { duration: 0.8, delay: 0.2 } }} viewport={{ once: true }}>
             <h2 className="font-bold text-3xl md:text-4xl">Обо мне</h2>
           </motion.div>
           <div className="flex justify-center items-center">
@@ -161,11 +163,14 @@ const Home = () => {
           </div>
         </motion.section>
         <Revievs />
+        <section id="works" className="mb-20">
+          <Works />
+        </section>
         <motion.section className="flex justify-center flex-col mb-22">
           <motion.div className="text-center mb-16" initial={{ opacity: 0 }} whileInView={{opacity: 1, transition: { duration: 0.8, delay: 0.2 } }} viewport={{ once: true }}>
             <h2 className="font-bold text-3xl md:text-4xl mb-3 px-[1rem]">Готовы обсудить проект?</h2>
             <p className="font-normal text-[18px] md:text-[20px] mb-12">Напишите мне в телеграм</p>
-            <a className="p-4 px-7 bg-purple-600 rounded-full font-semibold text-[17px] hover:button-g transition-shadow duration-300" href="http://t.me/murkildev" target="_blank" rel="noopener noreferrer">Написать мне</a>
+            <a className="p-4 px-7 bg-purple-600 rounded-full font-semibold text-[17px] hover:button-g transition-shadow duration-300" href="http://t.me/murkindev" target="_blank" rel="noopener noreferrer">Написать мне</a>
           </motion.div>
         </motion.section>
       </div>
