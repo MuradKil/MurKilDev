@@ -9,7 +9,7 @@ import Revievs from "./Revievs";
 import Works from "./Works";
 
 
-
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const Home = () => {
   useEffect(() => {
