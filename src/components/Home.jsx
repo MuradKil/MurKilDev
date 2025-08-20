@@ -95,7 +95,7 @@ const Home = () => {
             </div>
             <h1 className="font-semibold text-center text-[29px] md:text-4xl lg:text-5xl mb-6">Привет! Я — MurKinDev,<br />Frontend-разработчик.</h1>
             <p className="text-[17px] lg:text-[20px] text-center mb-7">Создаю сайты, которые нравятся и клиентам, и пользователям.</p>
-            <Link to='/works' className="p-4 px-7 bg-purple-600 rounded-full font-semibold text-[17px] hover:button-g transition-shadow duration-300">Посмотреть работы</Link>
+            <a href="#works" className="p-4 px-7 bg-purple-600 rounded-full font-semibold text-[17px] hover:button-g transition-shadow duration-300">Посмотреть работы</a>
           </div>
         </motion.section>
         <motion.section className="]">
@@ -155,14 +155,14 @@ const Home = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" width='28' height='28' xml:space="preserve" viewBox="0 0 16 16"><path fill="#ffffff" d="M2 2v12h12V2zm4 6h3v1H8v4H7V9H6zm5 0h2v1h-2v1h1a1.003 1.003 0 0 1 1 1v1a1.003 1.003 0 0 1-1 1h-2v-1h2v-1h-1a1.003 1.003 0 0 1-1-1V9a1.003 1.003 0 0 1 1-1"/></svg>
                   <h3 className="text-2xl font-semibold">TypeScript</h3>
                 </div>
-                <p className="text-[16px] lg:text-[18px] text-center text-orange-400">• In Progress</p>
+                <p className="text-[16px] lg:text-[18px] text-center text-green-400">• Active</p>
               </motion.div>
               <motion.div initial={{ opacity: 0, y: 30 }} whileHover={{scale: 1.01, border: "1px solid #9800eb", transition: { duration: 0.3 }}} whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.3, ease: "backInOut" } }} viewport={{ once: true }} className="card-g pt-6 rounded-3xl p-5 h-36 ">
                 <div className="flex justify-center items-center mb-5 space-x-3">
                   <svg xmlns="http://www.w3.org/2000/svg" width='28' height='28' viewBox="0 0 32 32"><path fill="#ffffff" d="M16 2a14 14 0 1 0 5.816 26.723L12 14v9a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h2.434a1 1 0 0 1 .857.486l11.491 19.15A14 14 0 0 0 16 2m8 16h-4V9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1Z"/></svg>
                   <h3 className="text-2xl font-semibold">Next JS</h3>
                 </div>
-                <p className="text-[16px] lg:text-[18px] text-center text-orange-400">• In Progress</p>
+                <p className="text-[16px] lg:text-[18px] text-center text-green-400">• Active</p>
               </motion.div>
             </div>
           </motion.section>
@@ -175,7 +175,7 @@ const Home = () => {
           <motion.div className="text-center mb-16" initial={{ opacity: 0 }} whileInView={{opacity: 1, transition: { duration: 0.8, delay: 0.2 } }} viewport={{ once: true }}>
             <h2 className="font-bold text-3xl md:text-4xl mb-3 px-[1rem]">Готовы обсудить проект?</h2>
             <p className="font-normal text-[18px] md:text-[20px] mb-12">Напишите мне в телеграм</p>
-            <a className="p-4 px-7 bg-purple-600 rounded-full font-semibold text-[17px] hover:button-g transition-shadow duration-300" href="http://t.me/murkindev" target="_blank" rel="noopener noreferrer">Написать мне</a>
+            <a className="p-4 px-7 bg-purple-600 rounded-full font-semibold text-[17px] hover:button-g transition-shadow duration-300" href="http://t.me/murkindev" target="_blank" rel="noopener noreferrer">Написать</a>
           </motion.div>
         </motion.section>
       </div>

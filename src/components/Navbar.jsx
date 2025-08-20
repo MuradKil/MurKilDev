@@ -4,13 +4,15 @@ import { motion } from "framer-motion";
 
 const scrollToWorks = () => {
   const worksSection = document.getElementById("works");
-  if (worksSection) {
-    worksSection.scrollIntoView({ behavior: "smooth" });
+  if (worksSection && window._scrollSmoother) {
+    window._scrollSmoother.scrollTo("#works", true);
   }
 };
 
 const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  if (window._scrollSmoother) {
+    window._scrollSmoother.scrollTo(0, true);
+  }
 };
 
 const Navbar = () => {
