@@ -1,5 +1,6 @@
 import { useState, forwardRef } from "react";
 import { motion, AnimatePresence, usePresenceData, wrap } from "framer-motion";
+import BgAnimation from "./BgAnims";
 
 const testimonials = [
   
