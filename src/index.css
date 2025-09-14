@@ -7,11 +7,12 @@
 
 @theme {
   --font-display: "Oswald", "sans-serif";
-  --font-roboto: "Roboto", sans-serif; 
+  --font-roboto: "Roboto", sans-serif;
+  --color-primary: #7300ff;
 }
 
 body {
-  background-color: rgb(16, 16, 16);
+  background-color: rgb(10, 10, 10);
 }
 
 @layer components {
@@ -28,12 +29,33 @@ body {
 }
 
 .hover\:button-g:hover {
-  box-shadow: 0px 0px 30px 1px rgb(180, 0, 221);
+  box-shadow: 0px 0px 30px 1px rgb(133, 0, 221);
 }
 
 .text-gradient {
-  background-image: linear-gradient(to right, #a42aeb, #754fc7, rgb(165, 35, 205));
+  background-image: linear-gradient(to right, #7300ff, #754fc7, rgb(165, 35, 205));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.bg-gradient {
+  background: linear-gradient(90deg, #1e0044 0%, #13003b 50%, rgb(40, 0, 52) 100%);
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #5b00cb 0%, #4e2d94 50%, rgb(112, 26, 155) 100%);
+}
+
+.nav-shadow {
+  box-shadow: 
+    rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, 
+    rgba(0, 0, 0, 0.16) 0px 2px 8px 0px;
+}
+
+.nav-shadow-hover:hover {
+  box-shadow: 
+    rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, 
+    rgba(0, 0, 0, 0.16) 0px 2px 8px 0px, 
+    0px 0px 30px 1px rgb(133, 0, 221);
 }

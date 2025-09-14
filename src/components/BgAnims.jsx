@@ -31,23 +31,24 @@ export default function BgAnimation({ className = "", style = {}, count = 14 }) 
 
     class Particle {
       constructor() {
-        this.x = Math.random() * wrapper.offsetWidth;
+        // Начинаем с правой стороны
+        this.x = wrapper.offsetWidth + Math.random() * 100; // Добавляем случайное смещение
         this.y = Math.random() * wrapper.offsetHeight;
         this.size = Math.random() * 16 + 24;
-        const speed = 0.4;
-        const angle = Math.random() * Math.PI * 2;
-        this.speedX = Math.cos(angle) * speed;
-        this.speedY = Math.sin(angle) * speed;
+        this.speed = Math.random() * 1 + 0.5; // Скорость движения влево
         this.color = "rgba(255,255,255,0.5)";
         this.radius = 6;
       }
 
       update() {
-        this.x += this.speedX;
-        this.y += this.speedY;
+        // Двигаемся только влево
+        this.x -= this.speed;
 
-        if (this.x < 0 || this.x > wrapper.offsetWidth) this.speedX = -this.speedX;
-        if (this.y < 0 || this.y > wrapper.offsetHeight) this.speedY = -this.speedY;
+        // Если частица ушла за левый край - возвращаем её справа
+        if (this.x + this.size < 0) {
+          this.x = wrapper.offsetWidth + Math.random() * 100;
+          this.y = Math.random() * wrapper.offsetHeight;
+        }
       }
 
       draw() {

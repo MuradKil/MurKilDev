@@ -8,6 +8,7 @@ import SplitText from "gsap/SplitText";
 import Revievs from "./Revievs";
 import Works from "./Works";
 import BgAnimation from "./BgAnims";
+import DarkVeil from "./BgNewAnim";
 
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -79,23 +80,25 @@ const Home = () => {
     };
   }, []);
   return (
-    <motion.main className="flex justify-center max-w-[100vw]" exit={{ opacity: 0 }}>
+    <motion.main className="flex justify-center" exit={{ opacity: 0 }}>
       <Helmet>
         <title>Портфолио • MurKilDev</title>
       </Helmet>
-      <div className="w-full max-w-[1440px]">
-        
+      <div className="w-full max-w-[1500px]">
+        <div style={{ width: '100%', height: '100vh', position: 'absolute' }}>
+          <DarkVeil />
+        </div>
         <motion.section className="relative flex justify-center items-center h-screen" initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 0.6 } }}>
-          <div className="absolute w-[100%] max-w-[440px] h-[440px] bg-purple-500/60 rounded-full blur-[170px] -z-10 bottom-20 animate-pulse" style={{ animationDuration: "6s" }} />
+          
           <div className="flex items-center flex-col max-w-[330px] md:max-w-[400px] lg:max-w-[540px]">
             <div className="flex justify-evenly items-center w-full mb-4 lg:px-6">
-              <div className="border border-neutral-500 p-1 px-3 lg:px-7 rounded-full">JavaScript</div>
-              <div className="border border-neutral-500 p-1 px-3 lg:px-7 rounded-full">React JS</div>
-              <div className="border border-neutral-500 p-1 px-3 lg:px-7 rounded-full">Tailwind CSS</div>
+              <div className="border border-neutral-500/50 p-1 px-3 lg:px-7 rounded-full">JavaScript</div>
+              <div className="border border-neutral-500/50 p-1 px-3 lg:px-7 rounded-full">React JS</div>
+              <div className="border border-neutral-500/50 p-1 px-3 lg:px-7 rounded-full">Tailwind CSS</div>
             </div>
             <h1 className="font-semibold text-center text-[29px] md:text-4xl lg:text-5xl mb-6">Привет! Я — MurKinDev,<br />Frontend-разработчик.</h1>
-            <p className="text-[17px] lg:text-[20px] text-center mb-7">Создаю сайты, которые нравятся и клиентам, и пользователям.</p>
-            <a href="#works" className="p-4 px-7 bg-purple-600 rounded-full font-semibold text-[17px] hover:button-g transition-shadow duration-300">Посмотреть работы</a>
+            <p className="text-[16px] lg:text-[19px] text-center mb-7 text-white/80">Создаю сайты, которые нравятся и клиентам, и пользователям.</p>
+            <motion.a href="#works" className="p-4 px-7 btn-gradient rounded-full font-semibold text-[17px] nav-shadow nav-shadow-hover transition-shadow duration-300">Посмотреть работы</motion.a>
           </div>
         </motion.section>
         <motion.section className="]">
@@ -175,7 +178,7 @@ const Home = () => {
           <motion.div className="text-center mb-16" initial={{ opacity: 0 }} whileInView={{opacity: 1, transition: { duration: 0.8, delay: 0.2 } }} viewport={{ once: true }}>
             <h2 className="font-bold text-3xl md:text-4xl mb-3 px-[1rem]">Готовы обсудить проект?</h2>
             <p className="font-normal text-[18px] md:text-[20px] mb-12">Напишите мне в телеграм</p>
-            <a className="p-4 px-7 bg-purple-600 rounded-full font-semibold text-[17px] hover:button-g transition-shadow duration-300" href="http://t.me/murkindev" target="_blank" rel="noopener noreferrer">Написать</a>
+            <a className="p-4 px-7 bg-primary rounded-full font-semibold text-[17px] hover:button-g transition-shadow duration-300" href="http://t.me/murkindev" target="_blank" rel="noopener noreferrer">Написать</a>
           </motion.div>
         </motion.section>
       </div>
