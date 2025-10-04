@@ -101,7 +101,7 @@ const Home = () => {
             <motion.a href="#works" className="p-4 px-7 btn-gradient rounded-full font-semibold text-[17px] nav-shadow nav-shadow-hover transition-shadow duration-300">Посмотреть работы</motion.a>
           </div>
         </motion.section>
-        <motion.section className="]">
+        <motion.section className="">
           <motion.div className="text-center mt-24 mb-8 md:mb-26" initial={{ opacity: 0 }} whileInView={{opacity: 1, transition: { duration: 0.8, delay: 0.2 } }} viewport={{ once: true }}>
             <h2 className="font-bold text-3xl md:text-4xl">Обо мне</h2>
           </motion.div>
