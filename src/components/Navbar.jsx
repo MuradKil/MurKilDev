@@ -20,7 +20,7 @@ const Navbar = () => {
   return (  
     <div className="z-40 w-screen h-[80px] md:h-[96px] fixed flex justify-center items-center">
       <motion.nav className="w-[98vw] md:w-[50vw] max-w-[400px] md:max-w-[480px] lg:max-w-[480px] lg:min-w-[500px] bg-gray-600/30 border border-gray-300/5 
-      backdrop-blur-[4px] fixed flex h-[60px] rounded-full items-center justify-between px-8 nav-shadow" initial={{ opacity: 0, y: -60 }} animate={{ opacity: 1, y: 0, transition: { duration: 0.6, ease: "backInOut" } }} exit={{ opacity: 0, y: -60, transition: { duration: 0.5 } }}>
+      backdrop-blur-[6px] fixed flex h-[60px] rounded-full items-center justify-between px-8 nav-shadow" initial={{ opacity: 0, y: -60 }} animate={{ opacity: 1, y: 0, transition: { duration: 0.6, ease: "backInOut" } }} exit={{ opacity: 0, y: -60, transition: { duration: 0.5 } }}>
         <h2 className="font-bold text-2xl">MurKinDev</h2>
 
         <ul className="w-[38%] hidden md:flex items-center justify-around">
