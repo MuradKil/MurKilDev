@@ -84,10 +84,10 @@ const Home = () => {
       <Helmet>
         <title>Портфолио • MurKilDev</title>
       </Helmet>
-      <div className="w-full max-w-[1500px]">
         <div style={{ width: '100%', height: '100vh', position: 'absolute' }}>
           <DarkVeil />
         </div>
+      <div className="w-full max-w-[1440px]">
         <motion.section className="relative flex justify-center items-center h-screen" initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 0.6 } }}>
           
           <div className="flex items-center flex-col max-w-[330px] md:max-w-[400px] lg:max-w-[540px]">
