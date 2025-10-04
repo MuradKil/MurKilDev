@@ -36,7 +36,7 @@ const Works = () => {
             </a>
             <a href="https://Cola149.ru" target="_blank" rel="noreferrer" className="mb-20">
               <motion.div className="flex flex-col items-center card-g rounded-3xl max-w-[800px] p-3" initial={{ opacity: 0, y: 30}} whileHover={{scale: 1.02, border: "1px solid #9800eb", transition: { duration: 0.3 }}} whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5, delay: 0, ease: "easeInOut" } }} viewport={{ once: true }}>
-                <img src="/cola149.png" alt="" className="rounded-2xl" />
+                <img src="/cola149.jpg" alt="" className="rounded-2xl" />
                 <div className="w-[100%]">
                   <h2 className="font-semibold text-2xl md:text-3xl m-3 ml-6">Cola149</h2>
                   <p className="mx-6 mb-4 text-neutral-200/80 text-[16px] md:text-[17px]">Сайт с ссылками.</p>
